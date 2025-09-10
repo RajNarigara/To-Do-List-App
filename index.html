@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ToDo List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-bg">
+    <div class="card">
+      <h1 class="title">ToDo List <span class="emoji">📒✏️</span></h1>
+
+      <div class="add-row">
+        <input id="taskInput" placeholder="Add your task" autocomplete="off">
+        <button id="addBtn" class="add-btn" title="Add task">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="white" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <ul id="taskList" class="tasks"></ul>
+
+      <div class="bottom-row">
+        <div id="count" class="count">0 items • 0 left</div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="active">Active</button>
+          <button class="filter" data-filter="completed">Completed</button>
+          <button id="clearAll" class="filter">Clear All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
